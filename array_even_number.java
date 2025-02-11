@@ -8,11 +8,8 @@ public class array_even_number {
         for (int i = 1; i < Even.length; i++) {
             if (Even[i] % 2 != 0) {
                 System.out.println(Even[i]);
-
             }
-
-        }
-            
+        } 
         }
 
     }

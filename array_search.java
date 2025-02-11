@@ -15,5 +15,6 @@ public class array_search {
         if(!found){
             System.out.println("it does not contain "+ a);
         }
+        sc.close();
     }
 }
