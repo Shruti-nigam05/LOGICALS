@@ -3,12 +3,14 @@ import java.util.*;
 
 public class practiceQue_conditions {
 
-    public void checkIfPass(int mark1, int mark2, int mark3) {
+    public void checkIfPass(int m1, int m2, int m3) {
 
-        int subtotal = mark1 + mark2 + mark3;
+        int subtotal = m1 + m2 + m3;
         float total = (subtotal / 300f) * 100;
-
-        if (mark1 >= 33 && mark2 >= 33 && mark3 >= 33 && total >= 40) {
+        if(m1>100 || m2>100 || m3>100){
+            System.out.println("invalid entry");
+        }
+        else if(m1 >= 33 && m2 >= 33 && m3 >= 33 && total >= 40) {
             System.out.println("student pass ");
         } else {
             System.out.println("student fail ");
@@ -82,13 +84,22 @@ public class practiceQue_conditions {
         // System.out.println("Enter your income (in lakh) : ");
         // float income = sc.nextFloat();
 
-        System.out.println("enter week day number : ");
-        int day = sc.nextInt();
+        // System.out.println("enter week day number : ");
+        // int day = sc.nextInt();
         
         practiceQue_conditions obj = new practiceQue_conditions();
-        //    obj.checkIfPass(mark1, mark2, mark3); // float percent = total * 100;
-        // obj.checkTax(income);
-        obj.dayOfWeek(day);
+        obj.checkIfPass(12, 55, 98); // float percent = total * 100;
+        obj.checkTax(9.8f);
+        //obj.dayOfWeek(day);
+  
+        int mark4 = sc.nextInt();
+        int mark5 = sc.nextInt();
+        int mark6 = sc.nextInt();
+
+        obj.checkIfPass(mark4, mark5, mark6); // float percent = total * 100;
+
+
+
       
     }
 }
